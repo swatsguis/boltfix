@@ -1,0 +1,308 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Tag = Instance.new("TextLabel")
+local Fly = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local Rob = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local On = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local Off = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local Explain = Instance.new("TextLabel")
+local Fps = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local Stop = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local Admin = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local Drop = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local Aim = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local Ani = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local Drope = Instance.new("TextLabel")
+local Ty = Instance.new("TextLabel")
+local Line = Instance.new("TextLabel")
+local Swat = Instance.new("TextLabel")
+local Ray = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game:GetService('CoreGui')
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(67, 97, 124)
+Frame.Position = UDim2.new(0.239795923, 0, 0.214723915, 0)
+Frame.Size = UDim2.new(0, 569, 0, 347)
+Frame.Draggable = true
+Frame.Active = true
+Frame.Selectable = true
+
+Tag.Name = "Tag"
+Tag.Parent = Frame
+Tag.BackgroundColor3 = Color3.fromRGB(67, 97, 124)
+Tag.BorderSizePixel = 0
+Tag.Size = UDim2.new(0, 179, 0, 50)
+Tag.Font = Enum.Font.SourceSansLight
+Tag.Text = "Bolt - Da Hood"
+Tag.TextColor3 = Color3.fromRGB(247, 255, 253)
+Tag.TextSize = 30.000
+Tag.TextWrapped = true
+
+Fly.Name = "Fly"
+Fly.Parent = Frame
+Fly.BackgroundColor3 = Color3.fromRGB(13, 160, 168)
+Fly.Position = UDim2.new(0.0263620354, 0, 0.172910661, 0)
+Fly.Size = UDim2.new(0, 164, 0, 40)
+Fly.Font = Enum.Font.SourceSans
+Fly.Text = "Fly (X)"
+Fly.TextColor3 = Color3.fromRGB(0, 0, 0)
+Fly.TextSize = 30.000
+Fly.TextWrapped = true
+Fly.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(('https://pastebin.com/raw/xR6U0GH2'),true))()
+end)
+
+UICorner.CornerRadius = UDim.new(0, 48)
+UICorner.Parent = Fly
+
+Rob.Name = "Rob"
+Rob.Parent = Frame
+Rob.BackgroundColor3 = Color3.fromRGB(13, 160, 168)
+Rob.Position = UDim2.new(0.360281199, 0, 0.172910661, 0)
+Rob.Size = UDim2.new(0, 158, 0, 40)
+Rob.Font = Enum.Font.SourceSans
+Rob.Text = "AutoFarm (Join Racemodex Group)"
+Rob.TextColor3 = Color3.fromRGB(0, 0, 0)
+Rob.TextScaled = true
+Rob.TextSize = 14.000
+Rob.TextWrapped = true
+Rob.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/racemodex/my-scripts/master/dahoodautofarm", true))()
+end)
+	
+UICorner_2.CornerRadius = UDim.new(0, 48)
+UICorner_2.Parent = Rob
+
+On.Name = "On"
+On.Parent = Frame
+On.BackgroundColor3 = Color3.fromRGB(13, 160, 168)
+On.Position = UDim2.new(0.629173994, 0, 0.844380379, 0)
+On.Size = UDim2.new(0, 52, 0, 40)
+On.Font = Enum.Font.SourceSans
+On.Text = "ON"
+On.TextColor3 = Color3.fromRGB(0, 0, 0)
+On.TextScaled = true
+On.TextSize = 14.000
+On.TextWrapped = true
+On.MouseButton1Down:connect(function()
+			loadstring(game:HttpGet(('https://pastebin.com/raw/Y0p7mPbC'),true))()
+end)	
+	
+UICorner_3.CornerRadius = UDim.new(0, 48)
+UICorner_3.Parent = On
+
+Off.Name = "Off"
+Off.Parent = Frame
+Off.BackgroundColor3 = Color3.fromRGB(13, 160, 168)
+Off.Position = UDim2.new(0.757469237, 0, 0.844380379, 0)
+Off.Size = UDim2.new(0, 52, 0, 40)
+Off.Font = Enum.Font.SourceSans
+Off.Text = "OFF"
+Off.TextColor3 = Color3.fromRGB(0, 0, 0)
+Off.TextScaled = true
+Off.TextSize = 14.000
+Off.TextWrapped = true
+Off.MouseButton1Down:connect(function()
+				loadstring(game:HttpGet(('https://pastebin.com/raw/q585KLyS'),true))()
+end)	
+	
+UICorner_4.CornerRadius = UDim.new(0, 48)
+UICorner_4.Parent = Off
+
+Explain.Name = "Explain"
+Explain.Parent = Frame
+Explain.BackgroundColor3 = Color3.fromRGB(67, 97, 124)
+Explain.BorderSizePixel = 0
+Explain.Position = UDim2.new(0.667838335, 0, 0.714697421, 0)
+Explain.Size = UDim2.new(0, 93, 0, 45)
+Explain.Font = Enum.Font.SourceSans
+Explain.Text = "Autostomp:"
+Explain.TextColor3 = Color3.fromRGB(0, 0, 0)
+Explain.TextScaled = true
+Explain.TextSize = 14.000
+Explain.TextWrapped = true
+
+Fps.Name = "Fps"
+Fps.Parent = Frame
+Fps.BackgroundColor3 = Color3.fromRGB(13, 160, 168)
+Fps.Position = UDim2.new(0.685413003, 0, 0.172910661, 0)
+Fps.Size = UDim2.new(0, 164, 0, 40)
+Fps.Font = Enum.Font.SourceSans
+Fps.Text = "Fps Unlocker"
+Fps.TextColor3 = Color3.fromRGB(0, 0, 0)
+Fps.TextSize = 30.000
+Fps.TextWrapped = true
+Fps.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(('https://pastebin.com/raw/dRQN83Be'),true))()
+end)
+
+UICorner_5.CornerRadius = UDim.new(0, 48)
+UICorner_5.Parent = Fps
+
+Stop.Name = "Stop"
+Stop.Parent = Frame
+Stop.BackgroundColor3 = Color3.fromRGB(13, 160, 168)
+Stop.Position = UDim2.new(0.289982438, 0, 0.844380379, 0)
+Stop.Size = UDim2.new(0, 47, 0, 40)
+Stop.Font = Enum.Font.SourceSans
+Stop.Text = "OFF"
+Stop.TextColor3 = Color3.fromRGB(0, 0, 0)
+Stop.TextScaled = true
+Stop.TextSize = 14.000
+Stop.TextWrapped = true
+Stop.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(('https://pastebin.com/raw/h7KZcYY6'),true))()
+end)
+
+UICorner_6.CornerRadius = UDim.new(0, 48)
+UICorner_6.Parent = Stop
+
+Admin.Name = "Admin"
+Admin.Parent = Frame
+Admin.BackgroundColor3 = Color3.fromRGB(13, 160, 168)
+Admin.Position = UDim2.new(0.685413003, 0, 0.354466856, 0)
+Admin.Size = UDim2.new(0, 164, 0, 40)
+Admin.Font = Enum.Font.SourceSans
+Admin.Text = "Admin Fly"
+Admin.TextColor3 = Color3.fromRGB(0, 0, 0)
+Admin.TextSize = 36.000
+Admin.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(('https://pastebin.com/raw/0tXr3tJZ'),true))()
+end)
+
+UICorner_7.CornerRadius = UDim.new(0, 48)
+UICorner_7.Parent = Admin
+
+Drop.Name = "Drop"
+Drop.Parent = Frame
+Drop.BackgroundColor3 = Color3.fromRGB(13, 160, 168)
+Drop.Position = UDim2.new(0.15817222, 0, 0.844380379, 0)
+Drop.Size = UDim2.new(0, 49, 0, 40)
+Drop.Font = Enum.Font.SourceSans
+Drop.Text = "ON"
+Drop.TextColor3 = Color3.fromRGB(0, 0, 0)
+Drop.TextScaled = true
+Drop.TextSize = 14.000
+Drop.TextWrapped = true
+Drop.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(('https://pastebin.com/raw/EpymrLk5'),true))()
+end)
+
+UICorner_8.CornerRadius = UDim.new(0, 48)
+UICorner_8.Parent = Drop
+
+Aim.Name = "Aim"
+Aim.Parent = Frame
+Aim.BackgroundColor3 = Color3.fromRGB(13, 160, 168)
+Aim.Position = UDim2.new(0.360281199, 0, 0.354466856, 0)
+Aim.Size = UDim2.new(0, 158, 0, 40)
+Aim.Font = Enum.Font.SourceSans
+Aim.Text = "Silent Aim (E)"
+Aim.TextColor3 = Color3.fromRGB(0, 0, 0)
+Aim.TextSize = 32.000
+Aim.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Stefanuk12/ROBLOX/master/Games/Da%20Hood/SilentAimAimLock.lua"))()
+end)
+
+UICorner_9.CornerRadius = UDim.new(0, 48)
+UICorner_9.Parent = Aim
+
+Ani.Name = "Ani"
+Ani.Parent = Frame
+Ani.BackgroundColor3 = Color3.fromRGB(13, 160, 168)
+Ani.Position = UDim2.new(0.026362041, 0, 0.354466856, 0)
+Ani.Size = UDim2.new(0, 164, 0, 40)
+Ani.Font = Enum.Font.SourceSans
+Ani.Text = "Animation Changer"
+Ani.TextColor3 = Color3.fromRGB(0, 0, 0)
+Ani.TextSize = 24.000
+Ani.TextWrapped = true
+Ani.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(('https://pastebin.com/raw/V6ykTV4g'),true))()
+end)
+
+UICorner_10.CornerRadius = UDim.new(0, 48)
+UICorner_10.Parent = Ani
+
+Drope.Name = "Drope"
+Drope.Parent = Frame
+Drope.BackgroundColor3 = Color3.fromRGB(67, 97, 124)
+Drope.BorderSizePixel = 0
+Drope.Position = UDim2.new(0.166959584, 0, 0.714697361, 0)
+Drope.Size = UDim2.new(0, 110, 0, 37)
+Drope.Font = Enum.Font.SourceSans
+Drope.Text = "Auto Drop (10k) :"
+Drope.TextColor3 = Color3.fromRGB(0, 0, 0)
+Drope.TextScaled = true
+Drope.TextSize = 13.000
+Drope.TextWrapped = true
+
+Ty.Name = "Ty"
+Ty.Parent = Frame
+Ty.BackgroundColor3 = Color3.fromRGB(67, 97, 124)
+Ty.BorderSizePixel = 0
+Ty.Position = UDim2.new(0.418277681, 0, 0.0172910672, 0)
+Ty.Size = UDim2.new(0, 308, 0, 38)
+Ty.Font = Enum.Font.LuckiestGuy
+Ty.Text = "[  💵   Thanks  For Using Bolt  💵  ]"
+Ty.TextColor3 = Color3.fromRGB(16, 213, 223)
+Ty.TextScaled = true
+Ty.TextSize = 14.000
+Ty.TextWrapped = true
+
+Line.Name = "Line"
+Line.Parent = Frame
+Line.BackgroundColor3 = Color3.fromRGB(67, 97, 124)
+Line.BorderSizePixel = 0
+Line.Position = UDim2.new(0, 0, 0.498559088, 0)
+Line.Size = UDim2.new(0, 569, 0, 18)
+Line.Font = Enum.Font.SourceSans
+Line.Text = "------------------------------------------------------------------------------------------------"
+Line.TextColor3 = Color3.fromRGB(0, 0, 0)
+Line.TextScaled = true
+Line.TextSize = 14.000
+Line.TextWrapped = true
+
+Swat.Name = "Swat"
+Swat.Parent = Frame
+Swat.BackgroundColor3 = Color3.fromRGB(13, 160, 168)
+Swat.Position = UDim2.new(0.0949033424, 0, 0.585014403, 0)
+Swat.Size = UDim2.new(0, 192, 0, 32)
+Swat.Font = Enum.Font.SourceSans
+Swat.Text = "Scripter-corrupt#5424"
+Swat.TextColor3 = Color3.fromRGB(0, 0, 0)
+Swat.TextScaled = true
+Swat.TextSize = 14.000
+Swat.TextWrapped = true
+
+Ray.Name = "Ray"
+Ray.Parent = Frame
+Ray.BackgroundColor3 = Color3.fromRGB(13, 160, 168)
+Ray.Position = UDim2.new(0.546572924, 0, 0.585014403, 0)
+Ray.Size = UDim2.new(0, 192, 0, 32)
+Ray.Font = Enum.Font.SourceSans
+Ray.Text = "Sources-Racemodex#0001"
+Ray.TextColor3 = Color3.fromRGB(0, 0, 0)
+Ray.TextScaled = true
+Ray.TextSize = 9.000
+Ray.TextWrapped = true
+
+	
